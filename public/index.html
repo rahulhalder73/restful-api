@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8" name="viewpoint" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+    <title>RESTful API Tutorial</title>
+</head>
+<body>
+    <p>Hello World! Hope you all are well</p>
+    <h2>-RESTful API-</h2>
+    <form id="user_form">
+        <field>
+            <label>GET</label>
+            <input id="get_request" type="text" placeholder="get movies" />
+            <input id=movieID name="movieID" placeholder="Movie ID" type="text" />
+            <button id="getButton" name="getButton" value="submit" type="submit">Submit</button>
+        </field>
+    </form>
+
+    <h2>-Database POST-</h2>
+    <form id="user_form_post">
+        <field>
+            <label>Movie Title</label>
+            <input id="movieTitle" type="text" name="movieTitle" placeholder="Post Movie Title"/>
+
+            <label>Movie Director</label>
+            <input id="movieDirector" type="text" name="movieDirector" placeholder="Post Movie Director" />
+
+            <button id="postButton" name="postButton" method="POST" type="submit"> POST </button>
+            <br />
+        </field> 
+    </form>
+
+    <form id="user_form_delete">
+        <field>
+            <label>Delete</label> <br />
+            <label>Movie ID</label> <br />
+            <input type="text" id="movieID" name="movieID" placeholder="Movie ID" />
+            <button type="submit">Delete Movie</button>
+        </field>
+    </form>
+
+    <form id="user_form_put">
+        <field>
+            <label>PUT</label><br />
+            <label>Movie Title:</label>
+            <input type="text" id="movieTitle" name="movieTitle" placeholder="Update Movie Title" />
+            <label>Movie Director:</label>
+            <input type="text" id="movieDirector" name="movieDirector" placeholder="Update Movie Director" />
+            <label>Movie ID:</label>
+            <input type="text" id="movieId" name="movieId" placeholder="Movie Id" />
+            <button type="submit" name="putButton" id="putButton" method="PUT">PUT</button><br />
+        </field>
+    </form>
+    <p>Movies in Database:</p>
+    <div id="result">
+
+    </div>
+    <script src="./api.js"></script>
+</body>
+</html>
